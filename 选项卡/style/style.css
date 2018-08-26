@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style-type:none;
+    overflow: hidden;
+    
+}
+#container{
+   width: 315px;
+   margin:100px auto;
+   position: relative;
+}
+#container #nav li.on{
+  border:2px solid #378CE6;
+  color:#378CE6;
+}
+#container #nav li{
+    float:left;
+    width: 60px;
+    text-align: center;
+border:1px solid #ccc;
+padding:5px 0;
+}
+
+#container #main dl{
+    display:none;
+    width: 310px;
+    border:1px solid #ccc;
+}
+#container #main dl.on{
+    display:block;
+}
+#container #main dl dt{
+    height: 170px;
+    width: 310px;
+}
+#container #main dl dt img{
+    width: 100%;
+    height: 100%;
+    float:left;
+    display:none;
+}
+
+#container #main dl dt img.pic{
+    display:block;
+}
+#container>span{
+    font-size: 28px;
+    font-weight: bold;
+    color:#999;
+    background:rgba(0,0,0,0.6);
+    z-index:9999;
+}
+#container>span#left{
+position: absolute;
+left:0;
+top:100px;
+}
+#container>span#right{
+    position: absolute;
+    right:4px;
+    top:100px;
+}
+#container #main dl dd>span{
+    display:inline-block;
+    width: 150px;
+    padding:5px 0;
+    color:#666;
+}
+#container #main dl dd>span:nth-child(3),#container #main dl dd>span:nth-child(6){
+color:red;
+}
+#container #main dl dd>span::before{
+    content:"·";
+margin:0 5px;
+color:#999;
+
+}
+#container #main dl dd>span:hover{
+color:red;
+}
